@@ -1,1 +1,7 @@
 @import "tailwindcss"
+
+@theme {
+    --bg-emerald-950: #064e3b;
+    --text-white: #ffffff;
+    --text-gray-300: #d1d5db;
+}
