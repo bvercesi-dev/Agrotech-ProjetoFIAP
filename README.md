@@ -1,4 +1,4 @@
-# 🌱 Olhinho na Planta
+# 🌱 AGROTECH - Olhinho na Planta
 *Keeping an Eye on the Plants*
 
 **Tecnologia para cuidar de hortas urbanas, acompanhar o solo e a compostagem e apoiar um cultivo mais sustentável.**  
