@@ -6,11 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Agrotech</title>
     <link rel="stylesheet" href="./css/styles.css">
+	<script src="./js/script.js" defer></script>
 </head>
+
 <body class="bg-emerald-950">
 	
 	<div class="flex justify-center items-center h-screen">
-		<center><img src="./images/pexels-photo-16663953.avif" width="300" height="300" alt="Background""></center>
+		<center><img src="./images/pexels-photo-16663953.avif" width="300" height="300" alt="Horta do Projeto Agrotech OLHINHO NA PLANTA"></center>
 		<br><br>
 		<h1 class="text-white font-extrabold font-sans text-5xl text-center">Olhinho na Planta
 			<br>
@@ -22,13 +24,37 @@
 		<br><br>
 	</div>
 
+<header class="cabecalho">
+	<a href="index.html" class="Agrotech">
+	</a>
+
+	<button
+	tyle="button"
+	class="menu-botao"
+	aria-label="Abrir menu de navegação"
+	aria-controls="menu-principal"
+	aria-expanded="false"
+	>
+     <span></span>
+     <span></span>
+     <span></span>
+    </button>
+
+	<nav id="menu-principal" class="menu-principal">
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
+</header>
 
 <section class="w-[70%] mx-auto my-8 p-4 bg-emerald-800 rounded-lg shadow-lg">		
 	<div class="mx-4 m-4 p-5 border-2 border-amber-100 align-center rounded-2xl">
-		<h1 class="text-gray-300 font-bold font-sans text-xl text-center text-wrap">Sobre o projeto <u>Olhinho na Planta</h1></u></h1>
-		<br><br>
+	
+		<h1 class="mt-9 text-2xl font-bold text-amber-100 text-center text-wrap">Sobre o projeto <u>Olhinho na Planta</u></h1>
 
-		<p class="text-gray-300 font-medium font-sans text-base text-center text-pretty">O Olhinho na Planta nasceu de uma ideia simples: usar a tecnologia para facilitar o cuidado com hortas urbanas e comunitárias. O projeto propõe uma plataforma de inteligência ambiental que transforma dados sobre o solo e a compostagem em informações úteis para quem cultiva.
+			<p class="mt-4 leading-relaxed text-emerald-50 text-center">O Olhinho na Planta nasceu de uma ideia simples: usar a tecnologia para facilitar o cuidado com hortas urbanas e comunitárias. O projeto propõe uma plataforma de inteligência ambiental que transforma dados sobre o solo e a compostagem em informações úteis para quem cultiva.
         <br><br>
         A proposta reúne o acompanhamento da umidade do solo, da temperatura da composteira e da quantidade de resíduos orgânicos. Com esses registros, o sistema poderá gerar alertas para apoiar decisões sobre irrigação e ajudar os responsáveis a acompanhar a transformação dos resíduos em composto para a própria horta.
         <br><br>
@@ -43,28 +69,33 @@
 
 
 		<br><br>
-		<h1 class="text-gray-300 font-medium font-serif text-2xl text-center text-wrap"><b>Quer saber mais sobre o nosso projeto?</b> <br>
+		<h1 class="text-gray-300 font-medium text-2xl text-center text-wrap"><b><i>Quer saber mais sobre o nosso projeto?</i></b> <br>
 			Veja o vídeo abaixo e fique por dentro de todos os detalhes!</h1>
 		<br><br>
 		<center><iframe class="w-[70%] h-70" src="https://www.youtube.com/embed/B86qcoMCqw0?si=hjMqsHSQcPsFoO3t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
 		<div>
 			<br><br>
-			<h2 class="text-gray-300 font-medium font-serif text-xl text-center text-wrap"><b>Quer adquirir nossa solução para a sua empresa ou condomínio?</b>
+			 <h2 class="mt-9 text-2xl font-bold text-amber-100 text-center text-wrap"><b>Quer adquirir nossa solução para a sua empresa ou condomínio?</b>
 				 <br>
 				Clique no botão abaixo e entre em contato conosco!</h2>
 			<br>
 			<div class="flex justify-center items-center">
 				<button class="bg-white text-emerald-950 font-bold py-2 px-4 rounded-full hover:bg-gray-200 transition duration-300">
-					<a href="mailto:bvercesi.dev@gmail.com" class="botao-email" class="text-emerald-950 hover:text-gray-200">Clique aqui para entrar em contato conosco</a>
+					<div class="flex justify-center items-center">
+                    <a href="./contato.html" class="botao-principal">
+                     Entre em contato conosco
+                    </a>
+            </div>
 				</button>
 			</div>
 		</div>
 		<br>
-		<p class="text-gray-300 font-medium font-sans text-base text-center text-pretty"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	</div>
 </section>
-</body>
-</html>
-	</div>
+
+	  <footer class="rodape">
+    <p>Agrotech - Olhinho na Planta - Projeto acadêmico de Engenharia de Software.</p>
+  </footer>
+
 </body>
 </html>

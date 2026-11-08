@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fale Conosco | Olhinho na Planta</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body class="bg-emerald-950 text-white">
+
+  <main class="mx-auto w-full max-w-3xl px-5 py-12">
+
+    <div class="mb-9 text-center">
+      <h1 class="text-3xl font-extrabold sm:text-5xl">
+        Fale Conosco
+      </h1>
+
+      <p class="mt-5 text-lg leading-relaxed text-emerald-100">
+        Tem uma dúvida, sugestão ou interesse em conhecer o projeto?
+        Preencha o formulário abaixo.
+      </p>
+    </div>
+
+    <div
+      class="rounded-2xl border border-emerald-700 bg-emerald-900 p-6 shadow-lg sm:p-10"
+    >
+      <p id="aviso-formulario" class="mb-6 leading-relaxed text-emerald-100">
+        Todos os campos com * são obrigatórios.
+        Este formulário é demonstrativo e não envia mensagens.
+      </p>
+
+      <form
+        id="form-contato"
+        aria-describedby="aviso-formulario"
+        class="flex flex-col gap-5"
+      >
+        <div>
+          <label for="nome" class="mb-2 block font-semibold">
+            Nome *
+          </label>
+
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            autocomplete="name"
+            placeholder="Digite seu nome"
+            required
+            minlength="3"
+            maxlength="100"
+            pattern=".*\S.*"
+            title="Informe seu nome com pelo menos 3 caracteres."
+            class="campo-formulario"
+          >
+        </div>
+
+        <div>
+          <label for="email" class="mb-2 block font-semibold">
+            E-mail *
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="voce@exemplo.com"
+            required
+            maxlength="150"
+            class="campo-formulario"
+          >
+        </div>
+
+        <div>
+          <label for="perfil" class="mb-2 block font-semibold">
+            Você representa *
+          </label>
+
+          <select
+            id="perfil"
+            name="perfil"
+            required
+            class="campo-formulario"
+          >
+            <option value="">Selecione uma opção</option>
+            <option value="pessoa-fisica">Pessoa física</option>
+            <option value="horta">Horta comunitária</option>
+            <option value="condominio">Condomínio</option>
+            <option value="empresa">Empresa</option>
+            <option value="instituicao">Instituição de ensino</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="assunto" class="mb-2 block font-semibold">
+            Assunto *
+          </label>
+
+          <select
+            id="assunto"
+            name="assunto"
+            required
+            class="campo-formulario"
+          >
+            <option value="">Selecione um assunto</option>
+            <option value="conhecer">Conhecer a solução</option>
+            <option value="parceria">Propor uma parceria</option>
+            <option value="duvida">Tirar uma dúvida</option>
+            <option value="sugestao">Enviar uma sugestão</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="mensagem" class="mb-2 block font-semibold">
+            Mensagem *
+          </label>
+
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="6"
+            placeholder="Conte como podemos ajudar."
+            required
+            minlength="10"
+            maxlength="2000"
+            aria-describedby="ajuda-mensagem"
+            class="campo-formulario"
+          ></textarea>
+
+          <p id="ajuda-mensagem" class="mt-2 text-sm text-emerald-100">
+            Escreva entre 10 e 2.000 caracteres.
+          </p>
+        </div>
+
+        <button type="submit" class="botao-principal">
+          Validar mensagem
+        </button>
+
+        <p
+          id="retorno-formulario"
+          role="status"
+          aria-live="polite"
+          class="retorno-formulario"
+        ></p>
+      </form>
+
+      <div class="mt-8 border-t border-emerald-700 pt-6">
+        <p class="leading-relaxed text-emerald-100">
+          Prefere entrar em contato por e-mail?
+        </p>
+
+        <a
+          href="mailto:bvercesi.dev@gmail.com"
+          class="mt-2 inline-block break-all font-semibold text-amber-100 underline"
+        >
+          bvercesi.dev@gmail.com
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Agrotech - Olhinho na Planta - Projeto acadêmico de Engenharia de Software.</p>
+  </footer>
